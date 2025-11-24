@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
-    // Initialize EmailJS with your Public Key
-    (function() {
-        emailjs.init("BpxBx3ilujr6gKAXs");
-    })();
-</script>
+        // Initialize EmailJS with your Public Key
+        (function() {
+            emailjs.init("BpxBx3ilujr6gKAXs");
+        })();
+    </script>
     <style>
         /* Global Styles */
         * {
@@ -134,44 +134,45 @@
         }
 
         /* Hero Section */
-.hero {
-    background: 
-        linear-gradient(135deg, rgba(44, 62, 80, 0.8), rgba(52, 152, 219, 0.8)),
-        url('https://github.com/Attey001/portfolio-images/blob/main/image.png?raw=true');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    padding: 150px 0 100px;
-    text-align: center;
-    position: relative;
-}
+        .hero {
+            background: 
+                linear-gradient(135deg, rgba(44, 62, 80, 0.8), rgba(52, 152, 219, 0.8)),
+                url('https://github.com/Attey001/portfolio-images/blob/main/self3.jpg?raw=true');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            padding: 150px 0 100px;
+            text-align: center;
+            position: relative;
+        }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
 
-.hero p {
-    font-size: 1.2rem;
-    max-width: 700px;
-    margin: 0 auto 30px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
 
-.profile-img {
-    width: 200px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid white;
-    margin-bottom: 30px;
-    box-shadow: var(--shadow);
-    position: relative;
-    z-index: 2;
-}
+        .profile-img {
+            width: 200px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            position: relative;
+            z-index: 2;
+        }
+
         /* About Section */
         .about {
             background-color: white;
@@ -198,215 +199,169 @@
             box-shadow: var(--shadow);
         }
 
-       /* Skills Category */
-.skills-category {
-    margin-bottom: 60px;
-}
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
-}
-.skills-category h3 {
-    font-size: 1.8rem;
-    color: var(--secondary-color);
-    margin-bottom: 30px;
-    text-align: center;
-    position: relative;
-}
+        /* Skills Category */
+        .skills-category {
+            margin-bottom: 60px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .skills-category h3 {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+        }
 
-.skills-category h3::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background-color: var(--secondary-color);
-}
+        .skills-category h3::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
 
-/* Skill Card Enhancements */
-.skill-card {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: var(--shadow);
-    text-align: center;
-    transition: all 0.3s ease;
-    border: 1px solid #f0f0f0;
-}
+        /* Skill Card Enhancements */
+        .skill-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid #f0f0f0;
+        }
 
-.skill-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
 
-.skill-card i {
-    font-size: 40px;
-    color: var(--secondary-color);
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
-}
+        .skill-card i {
+            font-size: 40px;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
 
-.skill-card:hover i {
-    transform: scale(1.1);
-}
+        .skill-card:hover i {
+            transform: scale(1.1);
+        }
 
-.skill-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-    color: var(--primary-color);
-}
+        .skill-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
 
-.skill-card p {
-    color: #666;
-    font-size: 0.95rem;
-    line-height: 1.5;
-}
+        .skill-card p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
 
-/* Programming Language Icons Specific Colors */
-.fa-html5 {
-    color: #e34f26 !important;
-}
+        /* Programming Language Icons Specific Colors */
+        .fa-html5 {
+            color: #e34f26 !important;
+        }
 
-.fa-css3-alt {
-    color: #1572b6 !important;
-}
+        .fa-css3-alt {
+            color: #1572b6 !important;
+        }
 
-.fa-js {
-    color: #f7df1e !important;
-}
+        .fa-js {
+            color: #f7df1e !important;
+        }
 
-.fa-python {
-    color: #3776ab !important;
-}
+        .fa-python {
+            color: #3776ab !important;
+        }
 
-.fa-java {
-    color: #007396 !important;
-}
+        .fa-java {
+            color: #007396 !important;
+        }
 
-.fa-database {
-    color: #336791 !important;
-}
+        .fa-database {
+            color: #336791 !important;
+        }
 
-.fa-php {
-    color: #6e4f8f !important;
-}
+        .fa-php {
+            color: #6e4f8f !important;
+        }
 
-       /* Add these to your existing CSS - DON'T replace anything */
+        /* Project Tech Tags */
+        .project-tech {
+            margin: 15px 0;
+        }
 
-/* Project Tech Tags */
-.project-tech {
-    margin: 15px 0;
-}
+        .tech-tag {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
 
-.tech-tag {
-    display: inline-block;
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    margin-right: 8px;
-    margin-bottom: 8px;
-}
+        /* Project Links */
+        .project-links {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
 
-/* Project Links */
-.project-links {
-    margin-top: 15px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
+        .project-links .btn {
+            padding: 8px 20px;
+            font-size: 0.9rem;
+        }
 
-.project-links .btn {
-    padding: 8px 20px;
-    font-size: 0.9rem;
-}
+        /* Project Cards Layout */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
 
-/* Keep your existing project styles - these are additions */
-.project-card {
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
-    transition: transform 0.3s ease;
-}
+        .project-card {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
 
-.project-card:hover {
-    transform: translateY(-10px);
-}
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
 
-.project-img {
-    height: 200px;
-    background-color: #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #777;
-}
+        .project-img {
+            height: 200px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+        }
 
-.project-content {
-    padding: 20px;
-}
+        .project-content {
+            padding: 20px;
+        }
 
-.empty-projects {
-    text-align: center;
-    padding: 60px 0;
-    color: #777;
-}
-/* Project Cards Layout */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.project-card {
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
-}
-
-.project-img {
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.project-content {
-    padding: 20px;
-}
-
-/* Technology Tags */
-.project-tech {
-    margin: 15px 0;
-}
-
-.tech-tag {
-    display: inline-block;
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    margin-right: 8px;
-    margin-bottom: 8px;
-}
-
-/* Project Links */
-.project-links {
-    margin-top: 15px;
-}
-
-.project-links .btn {
-    padding: 8px 20px;
-    font-size: 0.9rem;
-}
+        .empty-projects {
+            text-align: center;
+            padding: 60px 0;
+            color: #777;
+        }
 
         /* Contact Section */
         .contact {
@@ -527,6 +482,27 @@
                 order: -1;
             }
         }
+
+        /* Email Status Messages */
+        .email-status {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            text-align: center;
+            display: none;
+        }
+
+        .email-success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .email-error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
     </style>
 </head>
 <body>
@@ -552,7 +528,7 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
-            <img src="https://github.com/Attey001/portfolio-images/blob/main/Self.jpg?raw=true" alt="Samuel Nuertey Thompson" class="profile-img">
+            <img src="https://github.com/Attey001/portfolio-images/blob/main/image.png?raw=true" alt="Samuel Nuertey Thompson" class="profile-img">
             <h1>Samuel Nuertey Thompson</h1>
             <p>Web Developer & Designer</p>
             <a href="#contact" class="btn">Get In Touch</a>
@@ -585,7 +561,7 @@
         </div>
     </section>
 
-        <!-- Skills Section -->
+    <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
             <h2>My Skills</h2>
@@ -671,44 +647,44 @@
         </div>
     </section>
 
-   <!-- Projects Section -->
-<section id="projects" class="projects">
-    <div class="container">
-        <h2>My Projects</h2>
-        <div class="projects-grid">
-            
-            <!-- School Registration System Card -->
-            <div class="project-card">
-                <div class="project-img" style="background-color: #4CAF50; color: white;">
-                    <i class="fas fa-graduation-cap" style="font-size: 60px;"></i>
-                </div>
-                <div class="project-content">
-                    <h3>University Course Registration System</h3>
-                    <p>A Python program that lets students register for courses. It checks prerequisites, calculates tuition, and saves registrations to files.</p>
-                    
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">File Handling</span>
-                        <span class="tech-tag">Data Validation</span>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- School Registration System Card -->
+                <div class="project-card">
+                    <div class="project-img" style="background-color: #4CAF50; color: white;">
+                        <i class="fas fa-graduation-cap" style="font-size: 60px;"></i>
                     </div>
-                    
-                    <div class="project-links">
-                        <a href="https://github.com/Attey001/University_registration_system" class="btn" target="_blank">
-                            <i class="fab fa-github"></i> View Code
-                        </a>
+                    <div class="project-content">
+                        <h3>University Course Registration System</h3>
+                        <p>A Python program that lets students register for courses. It checks prerequisites, calculates tuition, and saves registrations to files.</p>
+                        
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">File Handling</span>
+                            <span class="tech-tag">Data Validation</span>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="https://github.com/Attey001/University_registration_system" class="btn" target="_blank">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <!-- More Projects Coming Soon -->
-            <div class="empty-projects">
-                <i class="fas fa-folder-open"></i>
-                <h3>More Projects Coming Soon</h3>
-                <p>I'm currently working on more projects. Check back later!</p>
+                
+                <!-- More Projects Coming Soon -->
+                <div class="empty-projects">
+                    <i class="fas fa-folder-open"></i>
+                    <h3>More Projects Coming Soon</h3>
+                    <p>I'm currently working on more projects. Check back later!</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
@@ -728,22 +704,27 @@
                     </div>
                 </div>
                 <div class="contact-form">
-    <form id="contact-form">
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="from_name" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="from_email" required>
-        </div>
-        <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-        </div>
-        <button type="submit" class="btn">Send Message</button>
-    </form>
-</div>
+                    <div id="email-status" class="email-status"></div>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="from_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="from_email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone (Optional)</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -782,32 +763,58 @@
             });
         });
 
-        // Form submission
         // Form submission with EmailJS
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Show loading state
-    const submitBtn = this.querySelector('.btn');
-    const originalText = submitBtn.textContent;
-    submitBtn.textContent = 'Sending...';
-    submitBtn.disabled = true;
-    
-    // Send the email using EmailJS
-    emailjs.sendForm('service_3ps5zim', 'template_2b3muxs', this)
-        .then(function() {
-            alert('Thank you for your message! I will get back to you soon.');
-            document.getElementById('contact-form').reset();
-        }, function(error) {
-            alert('Sorry, there was an error sending your message. Please try again or email me directly.');
-            console.log('EmailJS error:', error);
-        })
-        .finally(function() {
-            // Reset button state
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = this.querySelector('.btn');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            // Get form data
+            const formData = new FormData(this);
+            const templateParams = {
+                from_name: formData.get('from_name'),
+                from_email: formData.get('from_email'),
+                phone: formData.get('phone'),
+                message: formData.get('message'),
+                to_name: 'Samuel',
+                to_email: 'samuelthompsonjnr@gmail.com' 
+            };
+            
+            emailjs.send('service_3ps5zim', 'template_2b3muxs', templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    showEmailStatus('Thank you for your message! I will get back to you soon.', 'success');
+                    document.getElementById('contact-form').reset();
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    showEmailStatus('Sorry, there was an error sending your message. Please try again or email me directly.', 'error');
+                })
+                .finally(function() {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                });
         });
-});
+
+        function showEmailStatus(message, type) {
+            const statusElement = document.getElementById('email-status');
+            statusElement.textContent = message;
+            statusElement.className = 'email-status';
+            
+            if (type === 'success') {
+                statusElement.classList.add('email-success');
+            } else if (type === 'error') {
+                statusElement.classList.add('email-error');
+            }
+            
+            statusElement.style.display = 'block';
+
+            setTimeout(() => {
+                statusElement.style.display = 'none';
+            }, 5000);
+        }
     </script>
 </body>
 </html>
